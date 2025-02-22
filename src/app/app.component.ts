@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Ipost } from './components/models/Iposts';
+import { PostService } from './services/post.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'socialapp';
+  private _postservices = inject(PostService);
+
+ get postservices()
+ {
+  return this._postservices;
+ }
+ 
 }

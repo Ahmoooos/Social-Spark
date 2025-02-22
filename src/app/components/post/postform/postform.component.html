@@ -1,0 +1,21 @@
+<div class="d-flex flex-column justify-content-center align-content-center   " >
+   
+        <h3 class="text-center mb-5" >{{postId ? 'Update post' :'Create a new post'}}</h3>
+   
+    <form [formGroup]="postform" class="d-flex flex-column justify-content-center align-items-center "  (ngSubmit)="onSubmit()" >
+        
+            <label class="mb-2" for="post Data">Post Data</label>
+            <input type="text" placeholder="what do you think about" formControlName = "postdata" class="m-2 w-50">
+       
+       
+            <label class="mb-2" for="postimg">Post Image</label>
+            <input type="text" placeholder="src img" formControlName = "postimg" class="m-2 w-50">
+        
+        <button class="btn w-50 m-2" [ngClass]="{
+            'btn-primary': postform.valid,
+            'btn-danger': postform.invalid,
+          }" [disabled]="postform.invalid">{{postId ?'Edit Post' : 'Add New Post'}}</button>
+          
+          <button class="btn w-50 btn-primary m-2" routerLink="" >go back to home</button>
+    </form>
+</div>
