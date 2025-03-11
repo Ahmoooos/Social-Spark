@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "postdata": "this project will work",
+      "date": "2024-03-11T12:00:00.000Z",
+      "id": "123456789",
+      "userid": "1",
+      "img": "media/pexels-elti-meshau-107925-333850.jpg"
+    },
+    {
+      "postdata": "this project will work",
+      "date": "2024-03-11T12:05:00.000Z",
+      "id": "987654321",
+      "userid": "1",
+      "img": "media/pexels-simon73-1181181.jpg"
+    },
+    {
+      "postdata": "this project will work",
+      "date": "2024-03-11T12:10:00.000Z",
+      "id": "456789123",
+      "userid": "2",
+      "img": "media/pexels-vladbagacian-1368382.jpg"
+    },
+    {
+      "id": "105014774869",
+      "postdata": "I love hima hamhoma",
+      "img": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "date": "2025-03-11T02:04:49.085Z",
+      "userid": "300539686885"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userImg": "media/pexels-elti-meshau-107925-333850.jpg",
+      "username": "hima elarby",
+      "password": "123123"
+    },
+    {
+      "id": "2",
+      "userImg": "media/pexels-simon73-1181181.jpg",
+      "username": "hazem elarby",
+      "password": "123"
+    },
+    {
+      "id": "300539686885",
+      "username": "Alia Ahmed",
+      "password": "hima",
+      "userImg": "https://scontent.fcai19-2.fna.fbcdn.net/v/t39.30808-6/462922626_1913381869159600_3544030929594752825_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jsyaEMU4X9EQ7kNvgEaT8nc&_nc_oc=Adh_KwNATowGYiJGttKu1Dg16m3gZJFr40GOiJyNkhIyaR-QzYjmQ8LihxBrwPrZN6I&_nc_zt=23&_nc_ht=scontent.fcai19-2.fna&_nc_gid=A79hI4J0VoaOuVcLAQBQPKk&oh=00_AYGVgCqCeQU0LZB38oKwzERLlYBXqRocoR1VHmY2TxekWA&oe=67D562B3"
+    }
+  ]
+}

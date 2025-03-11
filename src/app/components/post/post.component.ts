@@ -21,7 +21,7 @@ export class PostComponent
   @Input() post : Idata = {
     id: '',
     postdata: '',
-    date: new Date(),
+    date: new Date().toISOString(),
     userid: ''
   }
   hidden = false;

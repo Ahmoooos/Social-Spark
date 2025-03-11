@@ -22,6 +22,7 @@ import {  RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { notAuthGuard } from './guard/not-auth.guard';
 import { authGuard } from './guard/auth.guard';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes : Routes =
 [
@@ -75,6 +76,7 @@ const routes : Routes =
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
 
   ],

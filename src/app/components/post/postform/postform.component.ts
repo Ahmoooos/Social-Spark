@@ -70,7 +70,7 @@ else
    {
      const postdata : Idata = {
        id: (Math.random() * Number(new Date())).toFixed().toString(), postdata: this.postform.controls.postdata.value, img: this.postform.controls.postimg.value,
-       date: new Date(),
+       date: new Date().toISOString(),
        userid: this._userservice.logedUser!.id
      }
      this._postservices.addPost(postdata);

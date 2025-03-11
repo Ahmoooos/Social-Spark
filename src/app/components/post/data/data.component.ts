@@ -12,7 +12,7 @@ export class DataComponent  {
   id: "",
   postdata: '',
   img: "",
-  date: new Date(),
+  date: new Date().toISOString(),
   userid: ''
 }
 }

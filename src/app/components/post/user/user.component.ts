@@ -17,8 +17,8 @@ export class UserComponent {
     password: ''
   }
   
-  @Input() postdate : Date
-  = new Date();
+  @Input() postdate : string
+  = "";
  
 
 

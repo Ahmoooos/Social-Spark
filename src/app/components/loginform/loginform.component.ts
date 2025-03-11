@@ -10,6 +10,11 @@ import { UserService } from '../../services/user.service';
 })
 export class LoginformComponent {
   private useservice = inject(UserService); 
+
+  
+  errorMessage = this.useservice.errorMessage
+  
+
   loginform = new FormGroup({
     username : new FormControl(),
     password : new FormControl()
