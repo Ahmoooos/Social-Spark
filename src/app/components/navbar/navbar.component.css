@@ -1,5 +1,22 @@
-img 
-{
-    height: 50px;
-    width: 50px;
-}
+.custom-navbar {
+    background: #ffffff;
+    border-bottom: 2px solid #eaeaea;
+    padding: 10px 20px;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #007bff;
+  }
+  
+  .btn-outline-danger:hover {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .btn-outline-primary:hover {
+    background: #007bff;
+    color: white;
+  }
+  

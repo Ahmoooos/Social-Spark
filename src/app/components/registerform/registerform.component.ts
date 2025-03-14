@@ -10,6 +10,9 @@ import { IUser } from '../models/Iuserdata';
   styleUrl: './registerform.component.css'
 })
 export class RegisterformComponent {
+updateImagePreview() {
+throw new Error('Method not implemented.');
+}
   
   private userservice = inject(UserService);
   registerform = new FormGroup({
@@ -18,6 +21,7 @@ export class RegisterformComponent {
     userimg: new FormControl()
     
   })
+imagePreview: any;
   onAddNewUser() {
     const controller = this.registerform.controls;
     const user : IUser =  

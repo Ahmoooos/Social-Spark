@@ -1,8 +1,17 @@
-.col-pur
-{
-  color:  #B197FC;
+.reaction-btn {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
-.col-blue
-{
-  color:  #4c17eb;
+
+.reaction-btn:hover i {
+  transform: scale(1.2);
+  color: var(--bs-primary);
+}
+
+.col-blue {
+  color: #007bff !important; /* Selected reaction color */
+}
+
+.col-gray {
+  color: #6c757d; /* Default unselected reaction color */
 }

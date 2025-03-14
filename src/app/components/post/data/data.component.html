@@ -1,4 +1,11 @@
-<div>
-    <p class="p-2">{{postdata.postdata}}</p>
-    <img [src]="postdata.img" alt="">
-</div>
+<div class="post-container p-3 border rounded shadow-sm">
+    <p class="p-2 text-dark fw-medium">{{ postdata.postdata }}</p>
+    
+    <img 
+      [src]="postdata.img" 
+      alt="Post Image" 
+      class="img-fluid rounded"
+      *ngIf="postdata.img"
+    />
+  </div>
+  

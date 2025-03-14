@@ -1,18 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-nav bg-dark mb-5">
+<nav class="navbar navbar-expand-lg custom-navbar shadow-sm">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">Introvert No More</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fw-bold text-primary" href="#">Social Spark</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div *ngIf="currentuser" class="d-flex gap-3 text-white align-items-center">
-      <img id ="img" class="rounded-circle" [src]="currentuser.userImg" title="rounded-cicle"/>
-      <h4 class="text-white">{{currentuser.username}}</h4>
-      <button class="btn btn-danger" (click)="logOut()">Log out</button>
-    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div *ngIf="currentuser" class="d-flex align-items-center gap-3">
+        <img
+          id="img"
+          class="rounded-circle profile-img"
+          [src]="currentuser.userImg"
+          alt="User Image"
+        />
+        <h5 class="m-0 text-dark">{{ currentuser.username }}</h5>
+        <button class="btn btn-outline-danger px-3" (click)="logOut()">Log out</button>
+      </div>
 
-    <div *ngIf="!currentuser" class="d-flex gap-3">
-      <button class="btn btn-success" routerLink="login">Login</button>
+      <div *ngIf="!currentuser" class="d-flex gap-3">
+        <button class="btn btn-outline-primary px-3" routerLink="login">Login</button>
+      </div>
     </div>
   </div>
 </nav>
